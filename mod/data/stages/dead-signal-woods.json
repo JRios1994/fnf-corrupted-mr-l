@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "name": "Dead Signal Woods",
+  "cameraZoom": 1.0,
+  "props": [
+    {
+      "name": "clearing",
+      "assetPath": "stages/dead-signal-woods/clearing",
+      "zIndex": 10,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "relayPulse",
+      "assetPath": "stages/dead-signal-woods/relay-pulse",
+      "zIndex": 20,
+      "position": [
+        364,
+        497
+      ],
+      "danceEvery": 1,
+      "startingAnimation": "idle",
+      "animations": [
+        {
+          "name": "idle",
+          "prefix": "pulse",
+          "frameRate": 12,
+          "looped": false
+        }
+      ]
+    }
+  ],
+  "characters": {
+    "dad": {
+      "zIndex": 200,
+      "position": [
+        610,
+        769
+      ],
+      "cameraOffsets": [
+        120,
+        -30
+      ]
+    },
+    "bf": {
+      "zIndex": 300,
+      "position": [
+        1090,
+        769
+      ],
+      "cameraOffsets": [
+        -160,
+        -72
+      ]
+    },
+    "gf": {
+      "zIndex": 100,
+      "position": [
+        845,
+        743
+      ],
+      "cameraOffsets": [
+        0,
+        -45
+      ]
+    }
+  }
+}

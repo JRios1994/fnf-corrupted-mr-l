@@ -49,3 +49,12 @@
 !/mod/images/dead-channel/bullet-note.png
 !/mod/images/dead-channel/bullet-note.xml
 !/mod/images/dead-channel/bullet-hud.png
+
+# Dead Signal Woods stage
+!/mod/data/stages/
+!/mod/data/stages/dead-signal-woods.json
+!/mod/images/stages/
+!/mod/images/stages/dead-signal-woods/
+!/mod/images/stages/dead-signal-woods/clearing.png
+!/mod/images/stages/dead-signal-woods/relay-pulse.png
+!/mod/images/stages/dead-signal-woods/relay-pulse.xml

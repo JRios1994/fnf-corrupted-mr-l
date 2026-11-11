@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="relay-pulse.png">
+  <SubTexture name="pulse0000" x="0" y="0" width="148" height="126" />
+  <SubTexture name="pulse0001" x="148" y="0" width="148" height="126" />
+  <SubTexture name="pulse0002" x="296" y="0" width="148" height="126" />
+  <SubTexture name="pulse0003" x="444" y="0" width="148" height="126" />
+  <SubTexture name="pulse0004" x="592" y="0" width="148" height="126" />
+  <SubTexture name="pulse0005" x="740" y="0" width="148" height="126" />
+</TextureAtlas>

@@ -2,6 +2,10 @@
 
 The relay has taken over Mr. L’s voice and movement. His hollow eyes and stretched silhouette take their cues from [Overdue (2)](https://marios-madness.fandom.com/wiki/Mr._L/Gallery). The violet fractures show the relay broadcasting through him. Boyfriend follows the rhythm to locate the source. The signal cuts out after the final response, leaving its source for the next battle.
 
+## Dead Signal Woods
+
+The battle takes place in a clearing at the end of a maintenance trail. The broken pole and cables lead to the relay on Mr. L’s side. The vents pulse with the beat while the player stands on the path to the right. Both Freeplay versions use this stage.
+
 ## Patterns
 
 The chart uses six call-and-response pairs at 120 BPM. Follow the four displayed arrows throughout. During the mirrored pairs, the chart swaps left with right and down with up in the player's answer.
@@ -29,7 +33,7 @@ If the song is missing, confirm the game version, that the mod is enabled, and t
 
 ## Asset provenance
 
-The geometric opponent sprite, icons, title graphic, synth instrumental, chart, and story were created for this project. The demo references Boyfriend, Girlfriend, the standard stage, and the default note style from the installed game. Keep imported game assets, third-party mod files, local settings, and credentials outside the repository. This is an unofficial fan project. Rights to the original games and characters belong to their respective owners. Project contributions have no redistribution license at this stage.
+The geometric opponent sprite, icons, title graphic, forest stage, synth instrumental, chart, and story were created for this project. The demo references Boyfriend, Girlfriend, and the default note style from the installed game. Keep imported game assets, third-party mod files, local settings, and credentials outside the repository. This is an unofficial fan project. Rights to the original games and characters belong to their respective owners. Project contributions have no redistribution license at this stage.
 
 ## Engine references
 
