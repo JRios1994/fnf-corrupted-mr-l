@@ -1,6 +1,6 @@
 # Battle 1 · Dead Channel
 
-The relay has taken over Mr. L’s voice and movement. The green visor and violet fractures show the relay broadcasting through him. Boyfriend follows the rhythm to locate the source. The signal cuts out after the final response, leaving its source for the next battle.
+The relay has taken over Mr. L’s voice and movement. The green L cap and black mask identify Mr. L, and the violet fractures show the relay broadcasting through him. Boyfriend follows the rhythm to locate the source. The signal cuts out after the final response, leaving its source for the next battle.
 
 ## Patterns
 
@@ -17,7 +17,7 @@ The chart uses six call-and-response pairs at 120 BPM. Follow the four displayed
 ## Parent playtest
 
 - Help the player find **Dead Channel** in Freeplay and listen for its preview.
-- Check that the green opponent appears when the chart starts.
+- Watch Mr. L lean left and right, crouch low, and reach up during his call. Check that his boots stay visible and that he returns to his idle pose.
 - Ask the player what changes after the two-tone cue. Hold the final sustained notes until their tails clear.
 - Let the song end and check for the results screen.
 - If anything fails, record the symptom and the step where it happened. Crop screenshots to the game window before sharing.

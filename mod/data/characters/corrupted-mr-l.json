@@ -8,27 +8,27 @@
     {
       "name": "idle",
       "prefix": "idle",
-      "frameRate": 24
+      "frameRate": 7
     },
     {
       "name": "singLEFT",
       "prefix": "singLEFT",
-      "frameRate": 24
+      "frameRate": 10
     },
     {
       "name": "singDOWN",
       "prefix": "singDOWN",
-      "frameRate": 24
+      "frameRate": 10
     },
     {
       "name": "singUP",
       "prefix": "singUP",
-      "frameRate": 24
+      "frameRate": 10
     },
     {
       "name": "singRIGHT",
       "prefix": "singRIGHT",
-      "frameRate": 24
+      "frameRate": 10
     }
   ]
 }
