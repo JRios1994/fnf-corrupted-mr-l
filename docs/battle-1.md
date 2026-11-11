@@ -14,7 +14,7 @@ The chart uses six call-and-response pairs at 120 BPM. Follow the four displayed
 | 18–26 seconds | Two echo pairs with short holds |
 | 26–28 seconds | Outro |
 
-Three gold bullet notes appear at 4.5, 13, and 20.5 seconds. Hit them like regular notes. The third bullet miss immediately triggers game over. Bullet misses reset when you retry. The same notes and rules apply to Boyfriend and Pico.
+Three gold bullet notes appear at 4.5, 13, and 20.5 seconds. Hit them like regular notes. The three bullet icons at the bottom left track the shots in order. A check marks a hit and an X marks a miss. The third bullet miss immediately triggers game over. Bullet misses reset when you retry. The same notes and rules apply to Boyfriend and Pico.
 
 ## Parent playtest
 

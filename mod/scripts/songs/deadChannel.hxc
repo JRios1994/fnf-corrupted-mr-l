@@ -1,11 +1,18 @@
-import funkin.modding.events.ScriptEvent.NoteScriptEvent;
+import flixel.FlxG;
+import flixel.FlxSprite;
+import funkin.Paths;
 import funkin.modding.events.ScriptEvent;
+import funkin.modding.events.ScriptEvent.HitNoteScriptEvent;
+import funkin.modding.events.ScriptEvent.NoteScriptEvent;
+import funkin.play.PlayState;
 import funkin.play.song.Song;
 import funkin.util.Constants;
 
 class DeadChannelSong extends Song
 {
   var missedBullets:Int = 0;
+  var bulletTimes:Array<Float> = [];
+  var bulletIcons:Array<FlxSprite> = [];
 
   public function new()
   {
@@ -15,13 +22,56 @@ class DeadChannelSong extends Song
   public override function onSongStart(event:ScriptEvent):Void
   {
     missedBullets = 0;
+    var play = PlayState.instance;
+    if (play == null || play.currentChart == null) return;
+
+    bulletTimes = [];
+    for (note in play.currentChart.notes)
+    {
+      if (note.kind == 'dead-channel-bullet') bulletTimes.push(note.time);
+    }
+
+    for (i in 0...bulletTimes.length)
+    {
+      if (i >= bulletIcons.length)
+      {
+        var icon = new FlxSprite(20 + i * 46, FlxG.height - 48);
+        icon.loadGraphic(Paths.image('dead-channel/bullet-hud'), true, 44, 30);
+        icon.animation.add('pending', [0], 0, false);
+        icon.animation.add('hit', [1], 0, false);
+        icon.animation.add('missed', [2], 0, false);
+        icon.scrollFactor.set(0, 0);
+        icon.cameras = [play.camHUD];
+        play.add(icon);
+        bulletIcons.push(icon);
+      }
+      bulletIcons[i].animation.play('pending');
+    }
+  }
+
+  public override function onNoteHit(event:HitNoteScriptEvent):Void
+  {
+    if (event.note.kind == 'dead-channel-bullet') updateBullet(event.note.strumTime, 'hit');
   }
 
   public override function onNoteMiss(event:NoteScriptEvent):Void
   {
     if (event.note.kind != 'dead-channel-bullet') return;
 
+    updateBullet(event.note.strumTime, 'missed');
     missedBullets++;
     if (missedBullets == 3) event.healthChange = -Constants.HEALTH_MAX;
+  }
+
+  function updateBullet(time:Float, state:String):Void
+  {
+    var index = bulletTimes.indexOf(time);
+    if (index >= 0 && index < bulletIcons.length) bulletIcons[index].animation.play(state);
+  }
+
+  public override function onDestroy(event:ScriptEvent):Void
+  {
+    bulletIcons = [];
+    bulletTimes = [];
   }
 }
