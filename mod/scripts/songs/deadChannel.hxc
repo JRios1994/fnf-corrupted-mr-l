@@ -1,8 +1,12 @@
 import flixel.FlxG;
 import flixel.FlxSprite;
+import flixel.text.FlxText;
+import flixel.text.FlxTextBorderStyle;
+import funkin.Highscore;
 import funkin.Paths;
 import funkin.modding.events.ScriptEvent;
 import funkin.modding.events.ScriptEvent.NoteScriptEvent;
+import funkin.modding.events.ScriptEvent.UpdateScriptEvent;
 import funkin.play.PlayState;
 import funkin.play.song.Song;
 import funkin.util.Constants;
@@ -11,6 +15,8 @@ class DeadChannelSong extends Song
 {
   var missedBullets:Int = 0;
   var bulletIcons:Array<FlxSprite> = [];
+  var songTimer:FlxText;
+  var missCounter:FlxText;
 
   public function new()
   {
@@ -36,6 +42,50 @@ class DeadChannelSong extends Song
       }
       bulletIcons[i].visible = true;
     }
+
+    if (songTimer == null)
+    {
+      songTimer = addHudText(play, 0, 10, FlxG.width, 'center');
+      missCounter = addHudText(play, FlxG.width - 220, FlxG.height - 48, 200, 'right');
+    }
+    refreshHud();
+  }
+
+  public override function onUpdate(event:UpdateScriptEvent):Void
+  {
+    if (songTimer != null) refreshHud();
+  }
+
+  function refreshHud():Void
+  {
+    var music = FlxG.sound.music;
+    if (music != null && music.length > 0)
+    {
+      var total = Math.ceil(music.length / 1000);
+      var elapsed = Std.int(Math.max(0, Math.min(total, Math.floor(music.time / 1000))));
+      var timerText = formatTime(elapsed) + ' / ' + formatTime(total) + '  (' + formatTime(total - elapsed) + ' left)';
+      if (songTimer.text != timerText) songTimer.text = timerText;
+    }
+
+    var missText = 'Misses: ' + Highscore.tallies.missed;
+    if (missCounter.text != missText) missCounter.text = missText;
+  }
+
+  function formatTime(seconds:Int):String
+  {
+    var remainder = seconds % 60;
+    return Std.int(seconds / 60) + ':' + (remainder < 10 ? '0' : '') + remainder;
+  }
+
+  function addHudText(play:PlayState, x:Float, y:Float, width:Float, align:String):FlxText
+  {
+    var label = new FlxText(x, y, width, '', 20);
+    label.setFormat(Paths.font('vcr.ttf'), 20, 0xFFFFFFFF, align, FlxTextBorderStyle.OUTLINE, 0xFF000000);
+    label.borderSize = 2;
+    label.scrollFactor.set(0, 0);
+    label.cameras = [play.camHUD];
+    play.add(label);
+    return label;
   }
 
   public override function onNoteMiss(event:NoteScriptEvent):Void
@@ -51,5 +101,7 @@ class DeadChannelSong extends Song
   public override function onDestroy(event:ScriptEvent):Void
   {
     bulletIcons = [];
+    songTimer = null;
+    missCounter = null;
   }
 }
