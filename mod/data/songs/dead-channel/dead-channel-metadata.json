@@ -1,0 +1,34 @@
+{
+  "version": "2.2.4",
+  "songName": "Dead Channel",
+  "artist": "Corrupted Mr. L project",
+  "charter": "Corrupted Mr. L project",
+  "playData": {
+    "difficulties": [
+      "normal"
+    ],
+    "ratings": {
+      "normal": 2
+    },
+    "stage": "mainStage",
+    "noteStyle": "funkin",
+    "previewStart": 0.09,
+    "previewEnd": 0.49,
+    "characters": {
+      "player": "bf",
+      "opponent": "corrupted-mr-l",
+      "girlfriend": "gf",
+      "playerVocals": [],
+      "opponentVocals": []
+    }
+  },
+  "timeChanges": [
+    {
+      "t": 0,
+      "b": 0,
+      "bpm": 120,
+      "n": 4,
+      "d": 4
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "name": "DEAD CHANNEL",
+  "titleAsset": "storymenu/titles/dead-channel",
+  "props": [],
+  "background": "#302746",
+  "songs": [
+    "dead-channel"
+  ],
+  "visible": false
+}

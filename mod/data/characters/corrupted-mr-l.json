@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0",
+  "name": "Corrupted Mr. L",
+  "assetPath": "characters/corrupted-mr-l",
+  "renderType": "sparrow",
+  "singTime": 4.0,
+  "animations": [
+    {
+      "name": "idle",
+      "prefix": "idle",
+      "frameRate": 24
+    },
+    {
+      "name": "singLEFT",
+      "prefix": "singLEFT",
+      "frameRate": 24
+    },
+    {
+      "name": "singDOWN",
+      "prefix": "singDOWN",
+      "frameRate": 24
+    },
+    {
+      "name": "singUP",
+      "prefix": "singUP",
+      "frameRate": 24
+    },
+    {
+      "name": "singRIGHT",
+      "prefix": "singRIGHT",
+      "frameRate": 24
+    }
+  ]
+}

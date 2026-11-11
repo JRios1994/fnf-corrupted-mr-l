@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="corrupted-mr-l.png">
+  <SubTexture name="idle0000" x="0" y="0" width="360" height="400" />
+  <SubTexture name="singLEFT0000" x="360" y="0" width="360" height="400" />
+  <SubTexture name="singDOWN0000" x="720" y="0" width="360" height="400" />
+  <SubTexture name="singUP0000" x="1080" y="0" width="360" height="400" />
+  <SubTexture name="singRIGHT0000" x="1440" y="0" width="360" height="400" />
+</TextureAtlas>
