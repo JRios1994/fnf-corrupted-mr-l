@@ -1,0 +1,27 @@
+import funkin.modding.events.ScriptEvent.NoteScriptEvent;
+import funkin.modding.events.ScriptEvent;
+import funkin.play.song.Song;
+import funkin.util.Constants;
+
+class DeadChannelSong extends Song
+{
+  var missedBullets:Int = 0;
+
+  public function new()
+  {
+    super('dead-channel');
+  }
+
+  public override function onSongStart(event:ScriptEvent):Void
+  {
+    missedBullets = 0;
+  }
+
+  public override function onNoteMiss(event:NoteScriptEvent):Void
+  {
+    if (event.note.kind != 'dead-channel-bullet') return;
+
+    missedBullets++;
+    if (missedBullets == 3) event.healthChange = -Constants.HEALTH_MAX;
+  }
+}

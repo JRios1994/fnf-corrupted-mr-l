@@ -9,6 +9,6 @@ A relay beneath an abandoned station broadcasts a voice that sounds almost famil
 1. Close Friday Night Funkin’. If you downloaded the project as a ZIP, extract it first.
 2. Copy the repository’s `mod` folder into the game’s `mods` folder. Rename the copy `fnf-corrupted-mr-l`. The copied folder should contain `_polymod_meta.json`, `data`, `images`, and `songs` directly.
 3. Open `Funkin.exe`. If needed, open **Mods** and enable **Corrupted Mr. L**.
-4. Open **Freeplay** with Boyfriend selected and play **Dead Channel** on **Normal**.
+4. Open **Freeplay** and play **Dead Channel** on **Normal**. Use **Tab** to choose Boyfriend or Pico. Hit at least one of the three gold bullet notes to avoid the bullet-triggered game over.
 
 See the [Battle 1 notes](docs/battle-1.md) for patterns, parent playtesting, and asset provenance.

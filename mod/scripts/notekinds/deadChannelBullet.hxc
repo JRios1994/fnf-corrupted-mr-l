@@ -1,0 +1,9 @@
+import funkin.play.notes.notekind.NoteKind;
+
+class DeadChannelBullet extends NoteKind
+{
+  public function new()
+  {
+    super('dead-channel-bullet', 'Dead Channel bullet', 'dead-channel-bullet');
+  }
+}

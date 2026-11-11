@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bullet-note.png">
+  <SubTexture name="left0000" x="0" y="0" width="144" height="144" />
+  <SubTexture name="down0000" x="144" y="0" width="144" height="144" />
+  <SubTexture name="up0000" x="288" y="0" width="144" height="144" />
+  <SubTexture name="right0000" x="432" y="0" width="144" height="144" />
+</TextureAtlas>

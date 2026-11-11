@@ -34,3 +34,17 @@
 !/mod/images/icons/icon-corrupted-mr-l.png
 !/mod/images/storymenu/titles/dead-channel.png
 !/mod/songs/dead-channel/Inst.ogg
+
+# Dead Channel bullet notes and Pico variation
+!/mod/data/notestyles/
+!/mod/images/dead-channel/
+!/mod/scripts/
+!/mod/scripts/notekinds/
+!/mod/scripts/songs/
+!/mod/data/songs/dead-channel/dead-channel-chart-pico.json
+!/mod/data/songs/dead-channel/dead-channel-metadata-pico.json
+!/mod/data/notestyles/dead-channel-bullet.json
+!/mod/scripts/notekinds/deadChannelBullet.hxc
+!/mod/scripts/songs/deadChannel.hxc
+!/mod/images/dead-channel/bullet-note.png
+!/mod/images/dead-channel/bullet-note.xml

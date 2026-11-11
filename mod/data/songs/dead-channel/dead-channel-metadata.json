@@ -20,7 +20,10 @@
       "girlfriend": "gf",
       "playerVocals": [],
       "opponentVocals": []
-    }
+    },
+    "songVariations": [
+      "pico"
+    ]
   },
   "timeChanges": [
     {

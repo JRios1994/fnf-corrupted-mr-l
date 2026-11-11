@@ -1,0 +1,26 @@
+{
+  "version": "1.1.0",
+  "name": "Dead Channel Bullet",
+  "author": "Corrupted Mr. L project",
+  "fallback": "funkin",
+  "assets": {
+    "note": {
+      "assetPath": "dead-channel/bullet-note",
+      "scale": 0.7,
+      "data": {
+        "left": {
+          "prefix": "left"
+        },
+        "down": {
+          "prefix": "down"
+        },
+        "up": {
+          "prefix": "up"
+        },
+        "right": {
+          "prefix": "right"
+        }
+      }
+    }
+  }
+}
